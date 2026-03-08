@@ -3,6 +3,7 @@ AOS.init({ once: true, offset: 50, duration: 800 });
 
 // Banco de Dados de Serviços (SPA)
 const servicesData = {
+
     'implante': {
         title: 'Implante Dentário',
         icon: 'fa-tooth',
@@ -16,65 +17,135 @@ const servicesData = {
         ],
         indication: 'Pacientes que perderam um, vários ou todos os dentes e desejam abandonar dentaduras ou pontes móveis.',
         duration: 'Cirurgia em 1 hora. Integração de 3 a 6 meses.',
-        image: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-        imgAntes: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', // Placeholder
-        imgDepois: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80' // Placeholder
+        image: 'img/implante.jpg',
+        imgAntes: 'img/implante_antes.jpg',
+        imgDepois: 'img/implante_depois.jpg'
     },
+
     'facetas': {
         title: 'Facetas de Porcelana',
         icon: 'fa-face-smile-beam',
         shortDesc: 'O segredo para um sorriso simétrico, branco e com formato perfeito.',
-        longDesc: '<p>As facetas de porcelana (ou lentes de contato dental) são lâminas ultrafinas cimentadas sobre a superfície dos dentes. Elas corrigem imperfeições de cor, formato, tamanho e pequeno alinhamento.</p><p>Em nossa clínica, fazemos o "Test Drive" do sorriso (Mockup), onde você aprova o formato e a cor em sua própria boca antes de finalizarmos o tratamento definitivo.</p>',
+        longDesc: '<p>As facetas de porcelana são lâminas ultrafinas cimentadas sobre a superfície dos dentes.</p><p>Corrigem imperfeições de cor, formato e pequenos desalinhamentos.</p>',
         benefits: [
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Resultado estético imediato e de alto padrão.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Porcelana não mancha com café ou vinho.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Correção de diastemas (espaços).</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Harmonização do sorriso com o rosto.</span></li>'
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Resultado estético imediato.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Porcelana não mancha.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Correção de diastemas.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Sorriso mais harmônico.</span></li>'
         ],
-        indication: 'Pacientes insatisfeitos com a cor, desgaste, formato ou pequenos desalinhamentos dentários.',
-        duration: 'Geralmente concluído em 2 ou 3 sessões.',
-        image: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-        imgAntes: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        imgDepois: 'https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+        indication: 'Pacientes insatisfeitos com a cor ou formato dos dentes.',
+        duration: '2 a 3 sessões.',
+        image: 'img/facetas.jpg',
+        imgAntes: 'img/faceta_antes.jpg',
+        imgDepois: 'img/faceta_depois.jpg'
     },
+
     'ortodontia': {
         title: 'Ortodontia (Invisível e Fixa)',
         icon: 'fa-teeth-open',
-        shortDesc: 'Alinhamento dental com conforto, discrição e previsibilidade.',
-        longDesc: '<p>Oferecemos o que há de mais moderno em alinhamento dental. Trabalhamos com Alinhadores Invisíveis (tipo Invisalign), que são placas transparentes removíveis, e também com aparelhos fixos de safira (altamente estéticos) e autoligáveis (mais rápidos).</p><p>O planejamento é todo feito de forma digital através de um escaneamento 3D da sua boca, eliminando aquelas moldagens desconfortáveis de massa.</p>',
+        shortDesc: 'Alinhamento dental com conforto e discrição.',
+        longDesc: '<p>Tratamentos com alinhadores invisíveis ou aparelhos estéticos.</p>',
         benefits: [
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Melhora na função mastigatória e fala.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Alinhadores permitem comer e higienizar sem restrições.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Estética impecável mesmo durante o tratamento.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Previsibilidade total do resultado final.</span></li>'
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Melhora na mastigação.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Mais conforto.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Estética durante o tratamento.</span></li>'
         ],
-        indication: 'Dentes tortos, encavalados, mordida cruzada, diastemas ou problemas articulares (ATM).',
-        duration: 'De 6 meses a 2 anos, dependendo da complexidade.',
-        image: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-        imgAntes: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        imgDepois: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+        indication: 'Dentes tortos ou desalinhados.',
+        duration: '6 meses a 2 anos.',
+        image: 'img/ortodontia.jpg',
+        imgAntes: 'img/ortodontia_antes.jpg',
+        imgDepois: 'img/ortodontia_depois.jpg'
     },
+
     'clareamento': {
         title: 'Clareamento Dental',
         icon: 'fa-wand-magic-sparkles',
-        shortDesc: 'Recupere o brilho e a cor clara dos seus dentes com segurança.',
-        longDesc: '<p>O clareamento devolve a juventude e a luminosidade ao seu sorriso. Na Sorriso Perfeito, oferecemos o Clareamento a Laser (feito em consultório com ação rápida) e o Clareamento Caseiro Supervisionado (com moldeiras personalizadas e gel seguro).</p><p>Nossos protocolos incluem dessensibilizantes de ponta, para que você alcance o tom desejado sem aquela dor chata ou sensibilidade excessiva.</p>',
+        shortDesc: 'Recupere o brilho do seu sorriso.',
+        longDesc: '<p>Clareamento a laser ou caseiro supervisionado.</p>',
         benefits: [
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Sorriso muito mais branco e jovem.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Remoção de manchas superficiais e profundas.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Procedimento totalmente seguro que não afeta o esmalte.</span></li>',
-            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Aumento imediato da autoestima.</span></li>'
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Dentes mais brancos.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Remoção de manchas.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Aumento da autoestima.</span></li>'
         ],
-        indication: 'Pacientes com dentes amarelados por tempo, café, cigarro ou que apenas desejam um sorriso mais iluminado.',
-        duration: 'Laser: 1 a 2 sessões. Caseiro: 15 a 21 dias.',
-        image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
-        imgAntes: 'https://images.unsplash.com/photo-1598256989800-fea5c5ce870b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-        imgDepois: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'
+        indication: 'Dentes amarelados.',
+        duration: '1 a 2 sessões.',
+        image: 'img/clareamento.jpg',
+        imgAntes: 'img/clareamento_antes.jpg',
+        imgDepois: 'img/clareamento_depois.jpg'
     },
-    'limpeza': { title: 'Profilaxia e Prevenção', icon: 'fa-hands-bubbles', shortDesc: 'Remoção de tártaro e placa para evitar cáries e gengivite.', longDesc: '<p>Prevenção é o melhor tratamento. Nossa limpeza utiliza ultrassom para remoção indolor de tártaro.</p>', benefits: [], indication: 'Recomendado para todos, a cada 6 meses.', duration: '40 minutos.', image: '', imgAntes: '', imgDepois: '' },
-    'canal': { title: 'Tratamento de Canal', icon: 'fa-tooth', shortDesc: 'Salve seu dente com tecnologia mecanizada em sessão única.', longDesc: '<p>Realizamos a endodontia mecanizada, rápida e sem dor.</p>', benefits: [], indication: 'Dentes inflamados, dor aguda, fraturas profundas.', duration: '1 a 2 sessões de 1h.', image: '', imgAntes: '', imgDepois: '' },
-    'estetica': { title: 'Harmonização Facial', icon: 'fa-syringe', shortDesc: 'Botox e Preenchimento para emoldurar seu novo sorriso.', longDesc: '<p>A odontologia estética vai além dos dentes, abrangendo lábios e face.</p>', benefits: [], indication: 'Sorriso gengival, lábios finos, rugas de expressão.', duration: '30 a 60 minutos.', image: '', imgAntes: '', imgDepois: '' },
-    'protese': { title: 'Prótese Dentária', icon: 'fa-teeth', shortDesc: 'Próteses fixas e móveis com altíssimo padrão estético.', longDesc: '<p>Reabilitação funcional com coroas em zircônia e porcelana pura.</p>', benefits: [], indication: 'Perda parcial ou coroa destruída.', duration: 'Varia conforme o caso.', image: '', imgAntes: '', imgDepois: '' }
+
+    'profilaxia': {
+        title: 'Profilaxia e Prevenção',
+        icon: 'fa-hands-bubbles',
+        shortDesc: 'Limpeza profissional para prevenir cáries.',
+        longDesc: '<p>O implante dentário é um pino de titânio instalado no osso para substituir a raiz do dente perdido. Após a cicatrização, é colocada uma prótese fixa que devolve estética, segurança e função ao sorriso.</p>',
+        benefits: [
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Remove tártaro.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Previne gengivite.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Mastigação firme e natural.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Solução durável que preserva o osso da mandíbula.</span></li>'
+        ],
+        indication: 'Todos os pacientes.',
+        duration: '40 minutos.',
+        image: 'img/profilaxia.jpg',
+        imgAntes: 'img/profilaxia_antes.jpg',
+        imgDepois: 'img/profilaxia_depois.jpg'
+    },
+
+    'canal': {
+        title: 'Tratamento de Canal',
+        icon: 'fa-tooth',
+        shortDesc: 'Tratamento moderno para salvar o dente.',
+        longDesc: '<p>O tratamento de canal remove a infecção do interior do dente, limpa a região e sela o canal, permitindo salvar o dente natural e eliminar a dor.</p>',
+        benefits: [
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Elimina dor.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Impede que a infecção se espalhe para outros dentes.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Evita a perda do dente natural.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Melhora a saúde bucal e previne complicações futuras.</span></li>'
+        ],
+        indication: 'Infecção ou dor intensa.',
+        duration: '1 a 2 sessões.',
+        image: 'img/canal.jpg',
+        imgAntes: 'img/canal_antes.jpg',
+        imgDepois: 'img/canal_depois.jpg'
+    },
+
+    'estetica': {
+        title: 'Harmonização Facial',
+        icon: 'fa-syringe',
+        shortDesc: 'Botox e preenchimento facial.',
+        longDesc: '<p>A harmonização facial é um conjunto de procedimentos estéticos, como aplicação de toxina botulínica (botox) e preenchimentos, realizados para equilibrar os traços do rosto, suavizar rugas e melhorar o contorno facial de forma natural.</p>',
+        benefits: [
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Suaviza rugas e linhas de expressão.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Melhora o contorno e a harmonia do rosto.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Resultados naturais com procedimentos minimamente invasivos.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Aumenta a autoestima e a confiança ao sorrir.</span></li>'
+        ],
+        indication: 'Quem deseja melhorar a estética facial.',
+        duration: '30 a 60 minutos.',
+        image: 'img/harmonizacao.jpg',
+        imgAntes: 'img/harmonizacao_antes.jpg',
+        imgDepois: 'img/harmonizacao_depois.jpg'
+    },
+
+    'protese': {
+        title: 'Prótese Dentária',
+        icon: 'fa-teeth',
+        shortDesc: 'Reposição de dentes perdidos.',
+        longDesc: '<p>A prótese dentária é um tratamento utilizado para substituir dentes perdidos, restaurando a função da mastigação e a estética do sorriso. Ela pode ser fixa ou removível e é feita sob medida para garantir conforto e aparência natural.</p>',
+        benefits: [
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Recupera a função da mastigação.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Melhora a estética e o sorriso.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Devolve a confiança ao falar e sorrir.</span></li>',
+            '<li class="flex items-start gap-3"><i class="fa-solid fa-check text-brand-cyan mt-1"></i><span>Próteses modernas com aparência natural.</span></li>'
+        ],
+        indication: 'Perda dentária.',
+        duration: 'Depende do caso.',
+        image: 'img/protese.jpg',
+        imgAntes: 'img/protese_antes.jpg',
+        imgDepois: 'img/protese_depois.jpg'
+    }
+
 };
 
 // Gerar Grid de Serviços na Home
@@ -82,7 +153,7 @@ const servicesGrid = document.getElementById('services-grid');
 let delay = 100;
 for (let key in servicesData) {
     const s = servicesData[key];
-    const hasLanding = ['implante', 'facetas', 'ortodontia', 'clareamento'].includes(key); // Somente esses 4 têm LP detalhada preenchida no JS para não estender demais
+    const hasLanding = ['implante', 'facetas', 'ortodontia', 'clareamento', 'profilaxia', 'canal', 'estetica', 'protese'].includes(key); // Somente esses 4 têm LP detalhada preenchida no JS para não estender demais
 
     const action = hasLanding ? `openServicePage('${key}')` : `window.location.href='#agendamento'`;
     const badge = hasLanding ? `<span class="text-xs text-brand-cyan font-bold block mb-2">Ver detalhes <i class="fa-solid fa-arrow-right"></i></span>` : '';
